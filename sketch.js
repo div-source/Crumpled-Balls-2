@@ -39,22 +39,22 @@ function draw() {
 	Engine.update(engine);
 	
 	
-	
+	paper1.display();
 	ground1.display();
 	box3.display();
 	box1.display();
 	box2.display();
 	image(boximage,1000,330,200,200);
-	paper1.display();
+	
 	
  
 }
 
 	function keyPressed()	{
-		if(keyDown(UP_ARROW))	{
-			Matter.Body.applyForce(paper1.body,paper1.body.position,{x:110,y:-110});
-
-		}
+		if(keyCode===UP_ARROW)	
+		{	Matter.Body.applyForce(paper1.body,paper1.body.position,{x:110,y:-110});
+	}
+		
 	}
 
 
